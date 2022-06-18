@@ -1,0 +1,32 @@
+\chapter{习题}
+\begin{questionList}
+    \item \begin{enumerate}
+        \setcounter{enumii}{5}
+        \item \begin{enumerate}
+                  \item $\script{K}{a}=\tan^2(\frac{\SI{90}{\degree}-\varphi}{2})=\frac{1}{3}$，$\script{K}{p}=\tan^2(\frac{\SI{90}{\degree}+\varphi}{2})=3$。
+                        \par $\gamma=\SI{18}{\kN/\m^3}$，取$\script{\gamma}{sat}=\SI{21}{\kN/\m^3}$。
+                        \par $h=-0.700-(-6.200)=\SI{5.5}{\m}$，$\script{h}{T1}=h-\SI{1000}{\mm}=\SI{4.5}{\m}$。水位深度$\script{h}{w}=\SI{0.8}{\m}$。
+                        \begin{align*}
+                            \script{\gamma}{sat} \script{K}{a} \script{h}{c1} & = \gamma \script{K}{p} \script{h}{w}+\script{\gamma}{sat} \script{K}{p} (h+\script{h}{c1}-\script{h}{w})                                              \\
+                            \script{h}{c1}                                          & = \frac{\gamma\script{K}{p}\script{h}{w}+\script{\gamma}{sat}\script{K}{p}(h-\script{h}{w})}{\script{\gamma}{sat}(\script{K}{a}-\script{K}{p})} \\
+                                                                                       & =\SI{0.5482}{\m}
+                        \end{align*}
+                        \par 对于反弯点上部
+                        \begin{align*}
+                             & \script{R}{c} (\script{h}{c1}+\script{h}{T1}) + \frac{\gamma\script{K}{p}\script{h}[2]{c1}}{2} (\script{h}{T1}+\frac{2\script{h}{c1}}{3})
+                            = \frac{\gamma \script{K}{a} (h+\script{h}{c1})^2}{2} (\script{h}{T1}+\script{h}{c1}-\frac{\script{h}{T1}+\script{h}{c1}}{3})                                                                \\
+                             & + \frac{(\script{\gamma}{sat}-\gamma) \script{K}{a} (h+\script{h}{c1}-\script{h}[2]{w})^2}{2} (\script{h}{T1}+\script{h}{c1}-\frac{\script{h}{T1}+\script{h}{c1}-\script{h}{w}}{3})
+                        \end{align*}
+                        于是$\script{R}{c}=\SI{75.25}{\kN}$，$\script{h}{0}=\sqrt{\frac{6\script{R}[\prime]{c}}{\script{\gamma}{sat}(\script{K}{p}-\script{K}{a})}}=\SI{2.839}{\m}$，$\script{h}{d}=\script{h}{c1}+\script{h}{0}=\SI{3.955}{\m}$。
+                  \item
+                        \begin{align*}
+                            \script{L}{1}+\script{L}{2} & = (h+\script{h}{c1})\tan(\frac{\SI{90}{\degree}-\varphi}{2}) + \script{h}{1}\tan(\frac{\SI{90}{\degree}+\varphi}{2}) \\
+                                                              & = (5.5+0.5482)*\frac{1}{\sqrt{3}} + 1.8*\sqrt{3}                                                                           \\
+                                                              & =        \SI{6.610}{\m}                                                                                                    \\
+                            h \tan(\SI{90}{\degree}-\varphi)  & =    \SI{9.526}{\m}
+                        \end{align*}
+                        取较大值\SI{9.526}{\m}。
+              \end{enumerate}
+            \item   
+    \end{enumerate}
+\end{questionList}
